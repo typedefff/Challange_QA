@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.7 on win32)" generated="20230315 22:17:21.145" rpa="false" schemaversion="3">
+<suite id="s1" name="TodoListTest" source="C:\Users\Nattawika Ritthison\OneDrive\Document\0_Automate\0_QA_Challange\Challange_QA\TestCases\TodoListTest.robot">
+<test id="s1-t1" name="01_Test_To_Verify_Can_Click_Add_Item" line="10">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230315 22:17:21.298" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20230315 22:17:21.298" endtime="20230315 22:17:22.389"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230315 22:17:22.390" level="INFO">Opening url 'https://abhigyank.github.io/To-Do-List/'</msg>
+<status status="PASS" starttime="20230315 22:17:22.390" endtime="20230315 22:17:26.555"/>
+</kw>
+<kw name="Verify Title Page" library="TodoListKeywords">
+<arg>${TITLE}</arg>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${title}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230315 22:17:26.559" level="INFO">Page title is 'To-Do List'.</msg>
+<status status="PASS" starttime="20230315 22:17:26.556" endtime="20230315 22:17:26.559"/>
+</kw>
+<status status="PASS" starttime="20230315 22:17:26.555" endtime="20230315 22:17:26.559"/>
+</kw>
+<kw name="Verify click add item" library="TodoListKeywords">
+<arg>${ADD-ITEM-BTN}</arg>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${add-item-btn}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230315 22:17:26.575" level="INFO">Element 'Xpath=//a[@href="#add-item"]' is displayed.</msg>
+<status status="PASS" starttime="20230315 22:17:26.560" endtime="20230315 22:17:26.575"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${add-item-btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230315 22:17:26.576" level="INFO">Clicking element 'Xpath=//a[@href="#add-item"]'.</msg>
+<status status="PASS" starttime="20230315 22:17:26.575" endtime="20230315 22:17:26.604"/>
+</kw>
+<status status="PASS" starttime="20230315 22:17:26.560" endtime="20230315 22:17:26.604"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>add-item.jpg</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230315 22:17:26.687" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="add-item.jpg"&gt;&lt;img src="add-item.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230315 22:17:26.687" level="INFO">C:\Users\Nattawika Ritthison\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py:888: UserWarning: name used for saved screenshot does not match file type. It should end with a `.png` extension
+  warnings.warn(</msg>
+<status status="PASS" starttime="20230315 22:17:26.604" endtime="20230315 22:17:26.688"/>
+</kw>
+<doc>To Verify can click add item tab</doc>
+<status status="PASS" starttime="20230315 22:17:21.297" endtime="20230315 22:17:26.688"/>
+</test>
+<test id="s1-t2" name="02_Test_To_Verify_Can_Click_Todo" line="18">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230315 22:17:26.690" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20230315 22:17:26.690" endtime="20230315 22:17:27.772"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230315 22:17:27.773" level="INFO">Opening url 'https://abhigyank.github.io/To-Do-List/'</msg>
+<status status="PASS" starttime="20230315 22:17:27.773" endtime="20230315 22:17:29.638"/>
+</kw>
+<kw name="Verify Title Page" library="TodoListKeywords">
+<arg>${TITLE}</arg>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${title}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230315 22:17:29.642" level="INFO">Page title is 'To-Do List'.</msg>
+<status status="PASS" starttime="20230315 22:17:29.639" endtime="20230315 22:17:29.642"/>
+</kw>
+<status status="PASS" starttime="20230315 22:17:29.638" endtime="20230315 22:17:29.642"/>
+</kw>
+<kw name="Verify click todo" library="TodoListKeywords">
+<arg>${TO-DO-BTN}</arg>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${to-do-btn}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230315 22:17:29.658" level="INFO">Element 'Xpath=//a[@href="#todo"]' is displayed.</msg>
+<status status="PASS" starttime="20230315 22:17:29.643" endtime="20230315 22:17:29.658"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${to-do-btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230315 22:17:29.659" level="INFO">Clicking element 'Xpath=//a[@href="#todo"]'.</msg>
+<status status="PASS" starttime="20230315 22:17:29.659" endtime="20230315 22:17:29.686"/>
+</kw>
+<status status="PASS" starttime="20230315 22:17:29.643" endtime="20230315 22:17:29.687"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>todo.jpg</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230315 22:17:29.779" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="todo.jpg"&gt;&lt;img src="todo.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230315 22:17:29.687" endtime="20230315 22:17:29.780"/>
+</kw>
+<doc>To Verify can click to do tab</doc>
+<status status="PASS" starttime="20230315 22:17:26.689" endtime="20230315 22:17:29.780"/>
+</test>
+<test id="s1-t3" name="03_Test_To_Verify_Can_Click_Completed" line="26">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230315 22:17:29.782" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20230315 22:17:29.782" endtime="20230315 22:17:30.865"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230315 22:17:30.866" level="INFO">Opening url 'https://abhigyank.github.io/To-Do-List/'</msg>
+<status status="PASS" starttime="20230315 22:17:30.866" endtime="20230315 22:17:32.138"/>
+</kw>
+<kw name="Verify Title Page" library="TodoListKeywords">
+<arg>${TITLE}</arg>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${title}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230315 22:17:32.142" level="INFO">Page title is 'To-Do List'.</msg>
+<status status="PASS" starttime="20230315 22:17:32.139" endtime="20230315 22:17:32.142"/>
+</kw>
+<status status="PASS" starttime="20230315 22:17:32.139" endtime="20230315 22:17:32.142"/>
+</kw>
+<kw name="Verify click completed" library="TodoListKeywords">
+<arg>${COMPLETED-BTN}</arg>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${completed-btn}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230315 22:17:32.159" level="INFO">Element 'Xpath=//a[@href="#completed"]' is displayed.</msg>
+<status status="PASS" starttime="20230315 22:17:32.142" endtime="20230315 22:17:32.159"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${completed-btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230315 22:17:32.160" level="INFO">Clicking element 'Xpath=//a[@href="#completed"]'.</msg>
+<status status="PASS" starttime="20230315 22:17:32.160" endtime="20230315 22:17:32.189"/>
+</kw>
+<status status="PASS" starttime="20230315 22:17:32.142" endtime="20230315 22:17:32.189"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>completed.jpg</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230315 22:17:32.245" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="completed.jpg"&gt;&lt;img src="completed.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230315 22:17:32.190" endtime="20230315 22:17:32.245"/>
+</kw>
+<doc>To Verify can click completed tab</doc>
+<status status="PASS" starttime="20230315 22:17:29.781" endtime="20230315 22:17:32.245"/>
+</test>
+<test id="s1-t4" name="04_Test_To_Verify_Can_Input_Text_And_Click_Add" line="34">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230315 22:17:32.246" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20230315 22:17:32.246" endtime="20230315 22:17:33.327"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230315 22:17:33.328" level="INFO">Opening url 'https://abhigyank.github.io/To-Do-List/'</msg>
+<status status="PASS" starttime="20230315 22:17:33.327" endtime="20230315 22:17:35.156"/>
+</kw>
+<kw name="Verify Title Page" library="TodoListKeywords">
+<arg>${TITLE}</arg>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${title}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230315 22:17:35.159" level="INFO">Page title is 'To-Do List'.</msg>
+<status status="PASS" starttime="20230315 22:17:35.157" endtime="20230315 22:17:35.159"/>
+</kw>
+<status status="PASS" starttime="20230315 22:17:35.156" endtime="20230315 22:17:35.160"/>
+</kw>
+<kw name="Verify click add item" library="TodoListKeywords">
+<arg>${ADD-ITEM-BTN}</arg>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${add-item-btn}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230315 22:17:35.176" level="INFO">Element 'Xpath=//a[@href="#add-item"]' is displayed.</msg>
+<status status="PASS" starttime="20230315 22:17:35.160" endtime="20230315 22:17:35.176"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${add-item-btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230315 22:17:35.177" level="INFO">Clicking element 'Xpath=//a[@href="#add-item"]'.</msg>
+<status status="PASS" starttime="20230315 22:17:35.177" endtime="20230315 22:17:35.203"/>
+</kw>
+<status status="PASS" starttime="20230315 22:17:35.160" endtime="20230315 22:17:35.204"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:new-task</arg>
+<arg>QA Challange</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230315 22:17:35.204" level="INFO">Typing text 'QA Challange' into text field 'id:new-task'.</msg>
+<status status="PASS" starttime="20230315 22:17:35.204" endtime="20230315 22:17:35.259"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>inputText.jpg</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230315 22:17:35.319" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="inputText.jpg"&gt;&lt;img src="inputText.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230315 22:17:35.259" endtime="20230315 22:17:35.319"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230315 22:17:35.320" level="INFO">Clicking button 'xpath://button'.</msg>
+<status status="PASS" starttime="20230315 22:17:35.320" endtime="20230315 22:17:35.358"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>button.jpg</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230315 22:17:35.411" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="button.jpg"&gt;&lt;img src="button.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230315 22:17:35.358" endtime="20230315 22:17:35.411"/>
+</kw>
+<doc>To Verify can input text and can click add button in add item page</doc>
+<status status="PASS" starttime="20230315 22:17:32.245" endtime="20230315 22:17:35.412"/>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230315 22:17:35.413" endtime="20230315 22:17:37.484"/>
+</kw>
+<status status="PASS" starttime="20230315 22:17:21.146" endtime="20230315 22:17:37.484"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="TodoListTest">TodoListTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
